@@ -12,7 +12,6 @@ import com.kamneklogs.socialapp.model.User
 import com.kamneklogs.socialapp.service.UserService
 
 class MainActivity : AppCompatActivity() {
-
     private val sharedPreference: Prefs by lazy {
         Prefs(applicationContext)
     }
@@ -29,8 +28,6 @@ class MainActivity : AppCompatActivity() {
 
         UserService.saveUser(User("logs", "123", "Camilo Cordoba", 12))
         UserService.saveUser(User("logs2", "123", "Andres Cordoba", 12))
-
-        sharedPreference.usernameLogged = ""
 
         verifyLoggedUser()
     }

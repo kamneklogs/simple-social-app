@@ -10,7 +10,6 @@ import com.kamneklogs.socialapp.databinding.ActivityLoginBinding
 import com.kamneklogs.socialapp.service.UserService
 
 class LoginActivity : AppCompatActivity() {
-
     private val binding: ActivityLoginBinding by lazy {
         ActivityLoginBinding.inflate(layoutInflater)
     }
