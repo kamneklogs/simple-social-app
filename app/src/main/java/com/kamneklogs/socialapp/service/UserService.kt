@@ -12,4 +12,15 @@ object UserService {
         return UserRepository.findUserByUsername(username)
     }
 
+    fun userExist(username: String): Boolean {
+        return UserRepository.userExist(username)
+    }
+
+    fun validatePassword(username: String, password: String): Boolean {
+        findUserByUsername(username).let {
+            return it!!.password == password
+        }
+        return false
+    }
+
 }

@@ -13,4 +13,8 @@ object UserRepository {
     fun findUserByUsername(username: String): User? {
         return users[username]
     }
+
+    fun userExist(username: String): Boolean {
+        return users.containsKey(username)
+    }
 }
