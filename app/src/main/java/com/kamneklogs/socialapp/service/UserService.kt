@@ -1,7 +1,7 @@
-package com.kamneklogs.socialappp.service
+package com.kamneklogs.socialapp.service
 
-import com.kamneklogs.socialappp.model.User
-import com.kamneklogs.socialappp.repository.UserRepository
+import com.kamneklogs.socialapp.model.User
+import com.kamneklogs.socialapp.repository.UserRepository
 
 object UserService {
     fun saveUser(user: User): User? {
@@ -11,4 +11,5 @@ object UserService {
     fun findUserByUsername(username: String): User? {
         return UserRepository.findUserByUsername(username)
     }
+
 }

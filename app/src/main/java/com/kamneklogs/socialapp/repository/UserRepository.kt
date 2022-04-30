@@ -1,6 +1,6 @@
-package com.kamneklogs.socialappp.repository
+package com.kamneklogs.socialapp.repository
 
-import com.kamneklogs.socialappp.model.User
+import com.kamneklogs.socialapp.model.User
 
 object UserRepository {
 
@@ -13,5 +13,4 @@ object UserRepository {
     fun findUserByUsername(username: String): User? {
         return users[username]
     }
-
 }

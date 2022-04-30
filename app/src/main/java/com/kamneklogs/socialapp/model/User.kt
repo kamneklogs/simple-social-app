@@ -1,6 +1,6 @@
-package com.kamneklogs.socialappp.model
+package com.kamneklogs.socialapp.model
 
-data class User(
+data class User (
     var username: String,
     var password: String,
 

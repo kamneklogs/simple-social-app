@@ -1,4 +1,4 @@
-package com.kamneklogs.socialappp
+package com.kamneklogs.socialapp
 
 import org.junit.Test
 
